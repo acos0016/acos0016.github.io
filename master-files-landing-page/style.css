@@ -4,7 +4,7 @@
 /*MTM6201 - RWDII*/
 /*Acos0016 Manuel Acosta*/
 
-/*Default styles*/
+/*Mobile and tablets breakpoint*/
 
 /*Adding styles for font*/
 
@@ -128,6 +128,7 @@ a {
   padding: 10px;
 }
 
+/*Breakpoint for laptops view*/
 
 @media (min-width: 768px) {
     
