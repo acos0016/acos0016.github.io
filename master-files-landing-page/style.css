@@ -132,6 +132,8 @@ a {
 
 @media (min-width: 768px) {
     
+/*Default styles for titles and paragraphs*/
+
     h1 {
        font-size: 4rem;
        width: 300px;
@@ -142,10 +144,14 @@ a {
         width: 300px;
    }
 
+/*Style for main section*/
+
    .intro {
        display: grid;
        grid-template-columns: 85px 200px 600px 85px;
    }
+
+/*Style for contact form*/
 
    .contact-form {
         background-color: white;
@@ -154,6 +160,8 @@ a {
         height: fit-content;
         width: 500px;
     }
+
+/*Style for footer icons*/
 
     .footer-icons{
         display: flex;
