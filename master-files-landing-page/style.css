@@ -58,6 +58,8 @@ p {
     font-size: 1.2rem;
 }
 
+/*Adding stryle for contact form*/
+
 .contact-form {
     background-color: white;
     display: flex;
