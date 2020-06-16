@@ -4,3 +4,152 @@
 /*MTM6201 - RWDII*/
 /*Acos0016 Manuel Acosta*/
 
+/*Default styles*/
+
+/*Adding styles for font*/
+
+body {
+    font-family: montserrat;
+}
+
+/*Setting for all sizes*/
+
+header,section,footer {
+  padding: 30px;
+  margin: 10px;
+}
+
+.main {
+    width: 100%;
+    max-width: 1900px;
+    margin: 0 auto;
+    background-color: #F7F7FF;
+  }
+
+/*Default styles for logo*/
+
+.dlogo {
+    width: 100px;
+    height: 80px;
+}
+
+/*Default styles for titles and paragraphs*/
+
+h1 {
+    font-size: 3rem;
+}
+
+h2 {
+    font-size: 2.5rem;
+}
+
+h3 {
+    font-size: 1.2rem;
+}
+
+h4 {
+    font-size: 0.5rem;
+    font-weight: 300;
+    display: flex;
+    justify-content: center;
+}
+
+p {
+    font-size: 1.2rem;
+}
+
+.contact-form {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    border-radius: 20px;
+    padding: 30px;
+}
+
+input {
+    background-color: #F7F7FF;
+    width: auto;
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px;
+}
+
+.wbutton {
+    background-color: #57EEAB;
+    border-radius: 10px;
+    width: auto;
+    padding: 10px 20px;
+    margin: 1rem 1rem;
+    font-size: 1rem;
+    font-weight: 400;
+    border: none;
+}
+
+.drive-form {
+    display: flex;
+}
+
+#hour {
+    width: 80px;
+}
+
+.dbutton {
+    background-color: #FF8480;
+    color: white;
+    border-radius: 10px;
+    width: auto;
+    padding: 10px 20px;
+    margin: 1rem 1rem;
+    font-size: 1rem;
+    font-weight: 400;
+    border: none;
+}
+
+a {
+    color: #FF8480;
+}
+
+.footer{
+    background-color: #FFFD8C;
+}
+
+.footer-icons{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 10px;
+}
+
+
+@media (min-width: 768px) {
+    
+    h1 {
+       font-size: 4rem;
+       width: 300px;
+   }
+
+   .subtitle {   
+        padding-top:400px;
+        width: 300px;
+   }
+
+   .intro {
+       display: grid;
+       grid-template-columns: 85px 200px 600px 85px;
+   }
+
+   .contact-form {
+        background-color: white;
+        display: flex;
+        margin-left: auto;
+        height: fit-content;
+        width: 500px;
+    }
+
+    .footer-icons{
+        display: flex;
+        justify-content: flex-end;
+      }
+}
