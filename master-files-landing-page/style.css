@@ -78,6 +78,10 @@ input {
     margin: 10px;
 }
 
+a {
+    color: #FF8480;
+}
+
 .wbutton {
     background-color: #57EEAB;
     border-radius: 10px;
@@ -111,9 +115,7 @@ input {
     border: none;
 }
 
-a {
-    color: #FF8480;
-}
+/*Style for footer*/
 
 .footer{
     background-color: #FFFD8C;
