@@ -87,9 +87,33 @@ img {
 /*Style for home page intro section*/
 
 .welcome {
-    background-image: url("Images/entrepreneur-2.jpg");
+    background-image: linear-gradient(rgba(41, 38, 38, 0.5), rgba(68, 66, 66, 0.5)), url("Images/entrepreneur-2.jpg");
     background-size: cover;
     height: 300px;
+}
+
+.welcome-text{
+    text-align: center;
+}
+
+button, [type=submit]:hover {
+    background-color: #0085AC;
+    color: white;
+    border-radius: 20%;
+    border: white;
+    display: inline-block;
+    padding: 10px 25px;
+    text-align: center;
+    cursor: pointer;
+}
+
+button:hover,
+button:active {
+    background-color: #333333;
+}
+
+p {
+    font-size: 1rem;
 }
 
 h1  {
@@ -99,27 +123,6 @@ h1  {
     color:white;
     text-align: center;
 }
-
-/*Animation for welcome message in welcome section*/
-
-.infobox{
-    display: none;
-  }
-  
-  .info{
-    transform: scale(0);
-    transition: transform 400ms 100ms ease-in;
-    transform-origin: top center;
-    color: white;
-    background-color: #0085AC;
-  }
-  .infobox:checked + .im{
-    transform: rotate(100deg);
-  }
-  .infobox:checked + .im + .info{
-    transform: scale(1);
-  }
-
 
 /*Style for home page services section*/
 
@@ -148,6 +151,47 @@ footer {
     right: 0;
     bottom: 0;
     color: white;
+}
+
+@media (min-width:960px) {
+
+    .welcome {
+        background-image: linear-gradient(rgba(41, 38, 38, 0.5), rgba(68, 66, 66, 0.5)), url("Images/entrepreneur-2-2400_x_2400.jpg");
+        background-size: cover;
+        position: relative;
+        height: 900px;
+    }
+    
+    h1 {
+        font-size: 3rem;
+    }
+
+    .services {
+        display: grid;
+        grid-gap: 1em;
+        grid-template-columns: 2fr 2fr 2fr;
+        grid-auto-rows: minmax(100px,auto);
+    }
+
+    .team {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    /*Style for images circle border*/
+    
+    img {
+    border-radius: 50%;
+    }
+
+    footer {
+        display: flex;
+        justify-content: space-evenly;
+        left: 0;    
+        right: 0;
+        bottom: 0;
+        color: white;
+    }
 }
 
 
