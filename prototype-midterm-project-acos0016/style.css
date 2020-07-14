@@ -1,10 +1,153 @@
+@import url('href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+
 /**********PROTOTYPE MIDTERM PROJECT**********/
 
 /*Responsive Web Design II*/
 /*Manuel Alejandro Acosta - acos0016*/
 
+/**** HOME **** ABOUT **** CONTACT ****/
 
+/*Single mobile - Default*/
 
 body {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  font-family: 'Quicksand', sans-serif;
+}
+
+.main {
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+  display: grid;
+}
+
+/*Style for structure*/
+
+header,section,footer {
+  flex-grow: 1;
+  padding: 25px;
+  margin: 5px;
+  background-color: #7E2A37;
+}
+
+/*Style for imgage of welcome*/
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+/*Style for logo*/
+
+.logo{
+    width: 400px;
+    height: 150px;
+}
+
+/*Style for header and menu for pages*/
+
+header {
+    flex-direction: column;
+}
+
+.menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
     background-color: #7E2A37;
 }
+  
+.menu a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 15px 15px;
+    text-decoration: none;
+    border-bottom: 1px solid white;
+}
+
+.current-page:link,
+.current-page a:visited {
+    background-color: #333333;
+}
+
+.menu a:hover,
+.menu a:active {
+    background-color: #0085AC;
+}
+
+/*Style for images circle border*/
+
+img {
+    border-radius: 50%;
+}
+
+/*Style for home page intro section*/
+
+.welcome {
+    background-image: url("Images/entrepreneur-2.jpg");
+    background-size: cover;
+    height: 300px;
+}
+
+h1  {
+    font-size: 1.4rem;
+    font-weight: bold;
+    white-space: nowrap;
+    color:white;
+    text-align: center;
+}
+
+/*Animation for welcome message in welcome section*/
+
+.infobox{
+    display: none;
+  }
+  
+  .info{
+    transform: scale(0);
+    transition: transform 400ms 100ms ease-in;
+    transform-origin: top center;
+    color: white;
+    background-color: #0085AC;
+  }
+  .infobox:checked + .im{
+    transform: rotate(100deg);
+  }
+  .infobox:checked + .im + .info{
+    transform: scale(1);
+  }
+
+
+/*Style for home page services section*/
+
+.services {
+    background-color: #333333;
+}
+
+.services, p {
+    color: white;
+}
+
+
+/*Style for home page team section*/
+
+.team {
+    background-color: #0085AC;
+}
+
+
+/*Style for footer section*/
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    left: 0;    
+    right: 0;
+    bottom: 0;
+    color: white;
+}
+
+
