@@ -96,6 +96,31 @@ img {
     text-align: center;
 }
 
+
+/*Animation for button home page and contact*/
+
+@keyframes move {
+    100% {  
+      transform-origin: 0 -100px; 
+    }
+    
+    100% { 
+      transform: translate(0px, 100px); 
+    }
+    
+    100% { 
+    transform: rotate(360deg);
+    transition: transform 5s; 
+    }
+  }
+
+button {
+    animation-name: move;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+}
+
+
 button, [type=submit]:hover {
     background-color: #0085AC;
     color: white;
@@ -105,12 +130,18 @@ button, [type=submit]:hover {
     padding: 10px 25px;
     text-align: center;
     cursor: pointer;
+    transform: scale(2);
+    transition: transform 1s;
+    opacity: 0.8; 
+    transition: 0.5s;
 }
 
 button:hover,
 button:active {
     background-color: #333333;
 }
+
+/*Style for texts and h1*/
 
 p {
     font-size: 1rem;
@@ -141,6 +172,84 @@ h1  {
     background-color: #0085AC;
 }
 
+/*Style for About page team section*/
+
+.profiles {
+    background-color: #333333;
+}
+
+/*Style for About page team section-Icons*/
+
+.im {
+    color: white;
+}
+
+/*Style for About page team contact*/
+
+.contactinfo {
+    background-color: #0085AC;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+}
+
+.map {
+    display: flex;
+    flex: auto;
+}
+
+/*Style for Contact form*/
+  
+fieldset {
+      border: none;
+      margin: 1rem;
+}
+  
+label, button {
+      display: block;
+      width: 90%;
+      font-size: 1rem;
+      color: black;
+      margin-top: 1rem;
+}
+  
+input[type="text"] {
+      width: 90%;
+      padding: 1rem;
+}
+  
+/*some style in the spaces*/
+
+input[type="text"]:focus {
+      color: black;
+      background-color: #333333;
+}
+  
+textarea {
+      width: 92%;
+      padding: 1rem;
+}
+
+/*some style in the textareas*/
+textarea:focus {
+      color: black;
+      background-color: #333333;
+}
+  
+button, [type=submit] {
+      display: inline-block;
+      background-color:maroon;
+      border-radius: 10px;
+      width: 90%;
+      padding: 10px 20px;
+      margin: 1rem 1rem;
+      font-size: 1rem;
+      font-weight: bold;
+      cursor:pointer;
+      color: white;
+}
 
 /*Style for footer section*/
 
@@ -155,6 +264,24 @@ footer {
 
 @media (min-width:960px) {
 
+    /*Style for menu bar*/ 
+
+    .menu {
+        display:flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        color: white;
+        text-align: center;
+        text-decoration: none;
+    }
+
+    .current-page:link,
+    .current-page a:visited {
+    background-color: #7E2A37;
+    }
+    
+     /*Style for home page image*/
+
     .welcome {
         background-image: linear-gradient(rgba(41, 38, 38, 0.5), rgba(68, 66, 66, 0.5)), url("Images/entrepreneur-2-2400_x_2400.jpg");
         background-size: cover;
@@ -165,6 +292,8 @@ footer {
     h1 {
         font-size: 3rem;
     }
+
+     /*Style for home page in service page*/
 
     .services {
         display: grid;
@@ -184,6 +313,30 @@ footer {
     border-radius: 50%;
     }
 
+     /*Style for about page*/
+
+    .profiles {
+        display: grid;
+        grid-gap: 1em;
+        grid-template-columns: 2fr 2fr;
+        grid-auto-rows: minmax(100px,auto);
+        align-items: center;
+    }
+
+    /*Style for contact page*/
+
+    .contactinfo {
+        display: grid;
+        grid-gap: 1em;
+        grid-template-columns: 2fr 2fr;
+        grid-auto-rows: minmax(100px,auto);
+        align-items: center;
+    }
+
+
+
+     /*Style for footer section*/
+
     footer {
         display: flex;
         justify-content: space-evenly;
@@ -193,5 +346,3 @@ footer {
         color: white;
     }
 }
-
-
