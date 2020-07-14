@@ -8,12 +8,13 @@
     <title>Midterm Project</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdn.iconmonstr.com/1.3.0/css/iconmonstr-iconic-font.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap">
 </head>
 <body>
     <main>
         <header class="header">
-            <nav>  
-              <img src="logo/logo-white.png" alt="logo">
+            <nav class="menu">  
+              <img src="logo/logo-white.png" class="logo" alt="logo">
               <a class="current-page" href="index.html">Home</a>
               <a href="about.html">About</a>
               <a href="#" class="nav-link">Programs</a>
@@ -22,8 +23,16 @@
             </nav>
         </header>
         <section class="welcome">
-            <h1>Welcome!</h1>
-            <img src="images/entrepreneur-2.jpg" alt="welcome">
+            <div>
+                Welcome 
+                <label for="infobox">
+                  <input type="checkbox" class="infobox" name="infobox" id="infobox">
+                  <i class="im im-megaphone"></i>    
+                  <div class="info">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maiores, inventore fugit facere dolorum eos, officiis placeat delectus voluptatibus quod libero quisquam accusantium aspernatur enim amet eveniet iste neque, praesentium aut!
+                  </div>
+                </label>
+              </div>
         </section>
         <section class="services">
             <div class="courses">
