@@ -30,4 +30,4 @@ YouTube
 
 Images are photos of my proper work. 
 
-To sum up, I really learn and challenge myself in order to be able to create a website from coding or using any frameworks. Abhy thanks for all the support and attention that you give us during all this course. I really enjoy it, sorry for not having use more things in my assignment but I must be honest and I'm trying to keep understanding and learning from this. However, it has been a great experience for me and for sure I will improve and work during my break in my portfolio website.  
+To sum up, I really learn and challenge myself in order to be able to create a website from coding or using any frameworks. Abhay thanks for all the support and attention that you give us during all this course. I really enjoy it, sorry for not having use more things in my assignment but I must be honest and I'm trying to keep understanding and learning from this. However, it has been a great experience for me and for sure I will improve and work during my break in my portfolio website.  
