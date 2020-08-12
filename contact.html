@@ -5,12 +5,17 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <!-- Autor rights - References, Use of template examples -->
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Jekyll v4.1.1">
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
 
-    <title>Web Portfolio</title>
-    <link rel="canonical" href="https://getbootstrap.com/docs/4.5/examples/carousel/">
+    <title>Contact Page</title>
+     <!-- References, Use of Bootstrap template examples -->
+    <link rel="canonical" href="https://getbootstrap.com/docs/4.5/examples/checkout/">
 
     <!-- Font for typography -->
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -62,72 +67,153 @@
           </ul>
         </div>
       </nav>
-</header>
+    </header>
 
 <hr class="featurette-divider">
 
-<div class="row featurette">
-  <div class="col-md-7 order-md-2">
-    <h2 class="featurette-heading">Contact <span class="text-muted">Me</span></h2>
-    <p class="lead">Thanks for having the time for look my Portfolio website, I will like to help you in order to achieve your goals. Please let me know</p>
-  </div>
-  <div class="col-md-5 order-md-1">
-    <img src="./web-portfolio-acos0016/images/maira_carvalho13.jpg" width="500" height="500" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 500x500"><rect width="100%" height="100%" fill="#eee"/><text x="50%" y="50%" fill="#aaa" dy=".3em"></text></img>
-  </div>
+    <div class="row featurette">
+      <div class="col-md-7 order-md-2">
+        <h2 class="featurette-heading p-4">Contact <span class="text-muted">Me</span></h2>
+        <p class="lead p-4">Thanks for having the time for look my Portfolio website, I will like to help you in order to achieve your goals. Please let me know</p>
+      </div>
+      <div class="col-md-5 order-md-1">
+        <img src="./web-portfolio-acos0016/images/maira_carvalho13.jpg" width="500" height="500" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 500x500"><rect width="100%" height="100%" fill="#eee"/><text x="50%" y="50%" fill="#aaa" dy=".3em"></text></img>
+      </div>
+    </div>
+
+<hr class="featurette-divider">
+
+<link rel="canonical" href="https://getbootstrap.com/docs/4.5/examples/checkout/">
+
+<!-- Bootstrap core CSS -->
+<link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
+
+<!-- Custom styles for this template -->
+<link href="form-validation.css" rel="stylesheet">
+</head>
+<body class="bg-light">
+<div class="container">
+<div class="py-5 text-center">
+<img class="d-block mx-auto mb-4" src="../assets/brand/bootstrap-solid.svg" alt="" width="72" height="72">
+<h2>Lets work together!</h2>
+<p class="lead">Be free to fill the form in order to know who you are and how can I help you. Thanks again for trust me and see you soon!</p>
 </div>
 
-<hr class="featurette-divider">
+<div class="col-md-8 order-md-1">
+  <h4 class="mb-3">Contact Information</h4>
+  <form class="needs-validation" novalidate>
+    <div class="row">
+      <div class="col-md-6 mb-3">
+        <label for="firstName">First name</label>
+        <input type="text" class="form-control" id="firstName" placeholder="" value="" required>
+        <div class="invalid-feedback">
+          Valid first name is required.
+        </div>
+      </div>
+      <div class="col-md-6 mb-3">
+        <label for="lastName">Last name</label>
+        <input type="text" class="form-control" id="lastName" placeholder="" value="" required>
+        <div class="invalid-feedback">
+          Valid last name is required.
+        </div>
+      </div>
+    </div>
 
-  <section class="contactinfo">
-        <div class="info2">
-            <form>
-                <fieldset>
-                    <label for="name">Name</label>
-                    <input type="text" name="name" id="name">
-                </fieldset>
-                    
-                <fieldset>
-                    <label for="email">Email</label>
-                    <input type="text" name="email" id="email">
-                </fieldset>
-                <fieldset>
-                    <legend>Location</legend>
-                    <label for="location">Select</label>
-                    <select name="location" id="location">
-                        <option selected disabled>Please choose</option>
-                        <option value="1">Nepean</option>
-                        <option value="2">Dowtown</option>
-                        <option value="3">Westboro</option>
-                    </select>
-                </fieldset>
-                <fieldset>
-                    <label for="message">Message</label>
-                    <textarea name="message" id="message"></textarea>
-                </fieldset>
-                <fieldset>
-                    <label for="spam">
-                        Yes, please subscribe me to spam
-                        <input type="checkbox" name="spam" id="spam" value="yes" checked>
-                    </label>
-                </fieldset>
-                    <button type="submit">Submit</button>
-            </form>
+    <div class="mb-3">
+      <label for="email">Email</label>
+      <input type="email" class="form-control" id="email" placeholder="user@example.com">
+      <div class="invalid-feedback">
+        Please enter a valid email address for shipping updates.
+      </div>
+    </div>
+
+    <div class="mb-3">
+      <label for="address2">Company or Personal Business<span class="text-muted">(Optional)</span></label>
+      <input type="text" class="form-control" id="company" placeholder="Brand Name">
+    </div>
+
+    <div class="mb-3">
+      <label for="address2">Phone Number</label>
+      <input type="text" class="form-control" id="number" placeholder="123-456-7890">
+    </div>
+
+    <div class="row">
+      <div class="col-md-5 mb-3">
+        <label for="services">Type of Service</label>
+        <select class="custom-select d-block w-100" id="services" required>
+          <option value="">Choose...</option>
+          <option>Video</option>
+          <option>Photography</option>
+          <option>Digital Graphics</option>
+          <option>Other</option>
+        </select>
+        <div class="invalid-feedback">
+          Please select a service.
+      </div>
+    </div>
+    
+      <div class="col-md-4 mb-3">
+        <label for="state">Country</label>
+        <select class="custom-select d-block w-100" id="country" required>
+          <option value="">Choose...</option>
+          <option>Canada</option>
+        </select>
+        <div class="invalid-feedback">
+          Please provide a valid Country.
         </div>
-        <div>
-            <div class="infomap">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2803.990517670018!2d-75.75867393524393!3d45.3490036790997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f131!3m3!1m2!1s0x4cce0783070ff8c9%3A0x1209627ade5a17ec!2sAlgonquin%20college!5e0!3m2!1ses!2sca!4v1587005804877!5m2!1ses!2sca" width="600" height="450" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
-            </div>
-        </div>
+      </div>
+    </div>
+    <hr class="mb-4">
+    <div class="custom-control custom-checkbox">
+      <input type="checkbox" class="custom-control-input" id="save-info">
+      <label class="custom-control-label" for="save-info">I agree to share my information</label>
+    </div>
+    <hr class="mb-4">
+    
+      </div>
+    </div>
+    <hr class="mb-4">
+    <button class="btn btn-info btn-lg btn-block" type="submit">Continue to checkout</button>
+  </form>
+</div>
+</div>
+</div>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script>window.jQuery || document.write('<script src="../assets/js/vendor/jquery.slim.min.js"><\/script>')</script><script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="form-validation.js"></script></body>
+</html>
     <hr class="featurette-divider">
 
-    </section>
-        <footer class="footer">
-            <span class="im im-facebook"></span>
-            <span class="im im-instagram"></span>
-            <span class="im im-twitter"></span>
-            <span class="im im-youtube"></span>
-            <p><p>Copyright &copy; 2020.</p>
-        </footer>
-    </main>   
-</body>
-</html>
+     <!-- FOOTER -->
+  <footer class="container">
+    <p class="float-right"><a href="#">Back to top</a></p>
+    <p>&copy; 2020 Copy Right.</p>
+  </footer>
+</main>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+      <script>window.jQuery || document.write('<script src="../assets/js/vendor/jquery.slim.min.js"><\/script>')</script><script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+  </body>
+</html>  
