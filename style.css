@@ -1,13 +1,16 @@
+/* Adding the font from Google Fonts*/
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
 
 /**********FINAL PROJECT**********/
 
-/**********Web Portfolio**********/
+/**********Web Portfolio Alejandro Acosta**********/
 
 /*Responsive Web Design II*/
 /*Manuel Alejandro Acosta - acos0016*/
 
-/**** HOME **** ABOUT **** CONTACT ****/
+/**** HOME **** ABOUT ME **** CONTACT ME **** PORTFOLIO****/
+
+/* Style for body*/
 
 body {
     padding-top: 3rem;
@@ -16,25 +19,27 @@ body {
     font-family: 'Quicksand', sans-serif;
   }
   
+
+/* Style for logo*/
+
 .logo {
     width: 150px;
     height: 100px;
 }
   
-  /* CUSTOMIZE THE CAROUSEL
-  -------------------------------------------------- */
+  /* Style in the banner images template "carousel"*/
   
-  /* Carousel base class */
+  /* Carousel main class */
   .carousel {
     margin-bottom: 4rem;
   }
-  /* Since positioning the image, we need to help out the caption */
+  /* image position */
   .carousel-caption {
     bottom: 3rem;
     z-index: 10;
   }
   
-  /* Declare heights because of positioning of img element */
+  /*position of img element */
   .carousel-item {
     height: 32rem;
   }
@@ -49,7 +54,8 @@ body {
   
   /* Services content*/
   
-  /* Center align the text within the three columns below the carousel */
+  /* Align for the three columns below the carousel template */
+
   .marketing .col-lg-4 {
     margin-bottom: 1.5rem;
     text-align: center;
@@ -63,14 +69,13 @@ body {
   }
   
   
-  /* Featurettes
-  ------------------------- */
+   /* For about me page*/
   
   .featurette-divider {
-    margin: 5rem 0; /* Space out the Bootstrap <hr> more */
+    margin: 5rem 0; 
   }
   
-  /* Thin out the marketing headings */
+  /* style for headings */
   .featurette-heading {
     font-weight: 300;
     line-height: 1;
@@ -83,11 +88,10 @@ body {
   }
   
   
-  /* RESPONSIVE CSS
-  -------------------------------------------------- */
+  /* Responsive breakpoints for carousel template*/
   
   @media (min-width: 40em) {
-    /* Bump up size of carousel content */
+    /* For carousel template*/
     .carousel-caption p {
       margin-bottom: 1.25rem;
       font-size: 1.25rem;
